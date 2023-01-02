@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="3D Reconstruction of dynamic scenes observed from a stereo camera. We introduce Dynamic Replica, a dataset for 3d reconstruction of dynamic objects. 
-        We also present DynamicStereo, a method for disparity estimation from dynamic stereo videos.">
+        content="3D Reconstruction of dynamic scenes observed from a stereo camera. 
+        We present Dynamic Replica, a synthetic dataset for 3d reconstruction of dynamic objects. We also introduce DynamicStereo, a method for disparity estimation from dynamic stereo videos.">
   <meta name="keywords" content="DynamicStereo, Dynamic Replica, Stereo, Disparity, Reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DynamicStereo: Consistent Dynamic Depth from Stereo Videos</title>
@@ -50,10 +50,10 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DynamicStereo: Consistent Dynamic Depth from Stereo Videos</h1>
+          <h1 style="font-size: 43px" class="title is-1 publication-title">DynamicStereo: Consistent Dynamic Depth from Stereo Videos</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Nikita Karaev</a><sup>1, 2</sup>,</span>
+              <a href="">Nikita Karaev</a><sup>1,2</sup>,</span>
             <span class="author-block">
               <a href="https://www.irocco.info/">Ignacio Rocco</a><sup>1</sup>,</span>
             <span class="author-block">
@@ -63,7 +63,7 @@
               <a href="https://nneverova.github.io/">Natalia Neverova</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a><sup>1, 2</sup>,
+              <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
               <a href="https://chrirupp.github.io/">Christian Rupprecht</a><sup>2</sup>
@@ -154,44 +154,44 @@
 <section class="hero is-light is-small">
   
   <div class="hero-body">
-    <div class="container">
+    <div class="container" id="container-carousel 1" >
       <h2 style="text-align: center;" class="title is-4">Input videos (Real and synthetic)</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel 1" class="carousel results-carousel">
 
         <div class="item item-ignacio">
-          <!-- style="width: 0px;" -->
-          <video poster="" id="ignacio" autoplay controls muted loop playsinline height="100%">
+          <!--  -->
+          <video style="width: 437px;" poster="" id="ignacio" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/ignacio_waving.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-nikita">
-          <video poster="" id="nikita" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="nikita" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/nikita_reading.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-teddy">
-          <video poster="" id="teddy" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="teddy" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/teddy_short.mp4"
                     type="video/mp4">
           </video>
         </div>
 
         <div class="item item-bd1989">
-          <video poster="" id="bd1989" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="bd1989" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/bd1989_short.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-fec654">
-          <video poster="" id="fec654" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="fec654" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/fec654_short.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-cc2896">
-          <video poster="" id="cc2896" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="cc2896" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/cc2896_short.mp4"
                     type="video/mp4">
           </video>
@@ -203,43 +203,43 @@
   
   
   <div class="hero-body">
-    <div class="container">
+    <div class="container" id="container-carousel 2" >
       <h2 style="text-align: center;" class="title is-4">Reconstructions</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel 2" class="carousel results-carousel">
 
         <div class="item item-ignacio-reconstruction">
-          <video poster="" id="ignacio-reconstruction" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="ignacio-reconstruction" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/ignacio_waving_reconstruction.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-nikita-reconstruction">
-          <video poster="" id="nikita-reconstruction" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="nikita-reconstruction" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/nikita_reading_reconstruction.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-teddy-reconstruction">
-          <video poster="" id="teddy-reconstruction" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="teddy-reconstruction" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/teddy_short_reconstruction.mp4"
                     type="video/mp4">
           </video>
         </div>
 
         <div class="item item-bd1989-reconstruction">
-          <video poster="" id="bd1989-reconstruction" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="bd1989-reconstruction" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/bd1989_reconstruction.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-fec654-reconstruction">
-          <video poster="" id="fec654-reconstruction" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="fec654-reconstruction" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/fec654_reconstruction.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-cc2896-reconstruction">
-          <video poster="" id="cc2896-reconstruction" autoplay controls muted loop playsinline height="100%">
+          <video style="width: 437px;" poster="" id="cc2896-reconstruction" autoplay controls muted loop playsinline height="100%">
             <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/cc2896_reconstruction.mp4"
                     type="video/mp4">
           </video>
