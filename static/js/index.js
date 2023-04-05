@@ -76,13 +76,13 @@ $(document).ready(function () {
   datalink.textContent = "Download data links";
   datalink.download = "links.json"
   datalink.target = "_blank"
-    /
 
-    function showDataLink() {
-      acceptButton.style.display = "none";
-      revealDatalink.style.display = "block";
-      // acceptButton.parentNode.replaceChild(divlink, acceptButton);
-    }
+
+  function showDataLink() {
+    acceptButton.style.display = "none";
+    revealDatalink.style.display = "block";
+    // acceptButton.parentNode.replaceChild(divlink, acceptButton);
+  }
 
   acceptButton.addEventListener('click', showDataLink);
   // acceptButton.addEventListener('click', acceptCookies);
