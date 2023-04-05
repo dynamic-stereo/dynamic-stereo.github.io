@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="3D Reconstruction of dynamic scenes observed from a stereo camera. 
+    content="3D Reconstruction of dynamic scenes observed from a stereo camera. 
         We present Dynamic Replica, a synthetic dataset for 3d reconstruction of dynamic objects. We also introduce DynamicStereo, a method for disparity estimation from dynamic stereo videos.">
   <meta name="keywords" content="DynamicStereo, Dynamic Replica, Stereo, Disparity, Reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DynamicStereo: Consistent Dynamic Depth from Stereo Videos</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
-  <!-- <script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RM5LWFPPP"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
-  </script> -->
+    gtag('config', 'G-8RM5LWFPPP');
+  </script>
 
   <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet"> -->
@@ -41,63 +39,63 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 style="font-size: 43px" class="title is-1 publication-title">DynamicStereo: Consistent Dynamic Depth from Stereo Videos</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://nikitakaraevv.github.io/">Nikita Karaev</a><sup>1,2</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.irocco.info/">Ignacio Rocco</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://ai.facebook.com/people/benjamin-graham/">Benjamin Graham</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://nneverova.github.io/">Natalia Neverova</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a><sup>1,2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://chrirupp.github.io/">Christian Rupprecht</a><sup>2</sup>
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Meta AI</span>
-            <span class="author-block"><sup>2</sup>Visual Geometry Group, University of Oxford</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <h1 style="font-size: 43px" class="title is-1 publication-title">DynamicStereo: Consistent Dynamic Depth
+              from Stereo Videos</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://nikitakaraevv.github.io/">Nikita Karaev</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.irocco.info/">Ignacio Rocco</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://ai.facebook.com/people/benjamin-graham/">Benjamin Graham</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://nneverova.github.io/">Natalia Neverova</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://chrirupp.github.io/">Christian Rupprecht</a><sup>2</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Meta AI</span>
+              <span class="author-block"><sup>2</sup>Visual Geometry Group, University of Oxford</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                    </span>
+                    <span>Paper (coming soon)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
+                    </span>
+                    <span>arXiv (coming soon)</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -106,35 +104,36 @@
                   <span>Video</span>
                 </a>
               </span> -->
-              <!-- Code Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/facebookresearch/dynamic_stereo"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
+                    </span>
+                    <span>Code (coming soon)</span>
                   </a>
-              </span> -->
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
-            </div>
+                    </span>
+                    <span>Data (coming soon)</span>
 
+                  </a>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- <section class="hero teaser">
+
+  <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -151,183 +150,193 @@
 </section> -->
 
 
-<section class="hero is-light is-small">
-  
-  <div class="hero-body">
-    <div class="container" id="container-carousel 1" >
-      <h2 style="text-align: center;" class="title is-4">Input videos (Real and synthetic)</h2>
-      <div id="results-carousel 1" class="carousel results-carousel">
+  <section class="hero is-light is-small">
 
-        <div class="item item-ignacio">
-          <!--  -->
-          <video style="width: 437px;" poster="" id="ignacio" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/ignacio_waving.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-nikita">
-          <video style="width: 437px;" poster="" id="nikita" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/nikita_reading.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-teddy">
-          <video style="width: 437px;" poster="" id="teddy" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/teddy_short.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
+    <div class="hero-body">
+      <div class="container" id="container-carousel 1">
+        <h2 style="text-align: center;" class="title is-4">Input videos (Real and synthetic)</h2>
+        <div id="results-carousel 1" class="carousel results-carousel">
 
-        <div class="item item-bd1989">
-          <video style="width: 437px;" poster="" id="bd1989" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/bd1989_short.mp4"
-                    type="video/mp4">
-          </video>
+          <div class="item item-ignacio">
+            <!--  -->
+            <video style="width: 437px;" poster="" id="ignacio" autoplay controls muted loop playsinline height="100%">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/ignacio_waving.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-nikita">
+            <video style="width: 437px;" poster="" id="nikita" autoplay controls muted loop playsinline height="100%">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/nikita_reading.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-teddy">
+            <video style="width: 437px;" poster="" id="teddy" autoplay controls muted loop playsinline height="100%">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/teddy_short.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-bd1989">
+            <video style="width: 437px;" poster="" id="bd1989" autoplay controls muted loop playsinline height="100%">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/bd1989_short.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fec654">
+            <video style="width: 437px;" poster="" id="fec654" autoplay controls muted loop playsinline height="100%">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/fec654_short.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-cc2896">
+            <video style="width: 437px;" poster="" id="cc2896" autoplay controls muted loop playsinline height="100%">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/cc2896_short.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+
         </div>
-        <div class="item item-fec654">
-          <video style="width: 437px;" poster="" id="fec654" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/fec654_short.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-cc2896">
-          <video style="width: 437px;" poster="" id="cc2896" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/cc2896_short.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        
       </div>
     </div>
-  </div>
-  
-  
-  <div class="hero-body">
-    <div class="container" id="container-carousel 2" >
-      <h2 style="text-align: center;" class="title is-4">Reconstructions</h2>
-      <div id="results-carousel 2" class="carousel results-carousel">
 
-        <div class="item item-ignacio-reconstruction">
-          <video style="width: 437px;" poster="" id="ignacio-reconstruction" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/ignacio_waving_reconstruction.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-nikita-reconstruction">
-          <video style="width: 437px;" poster="" id="nikita-reconstruction" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/nikita_reading_reconstruction.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-teddy-reconstruction">
-          <video style="width: 437px;" poster="" id="teddy-reconstruction" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/teddy_short_reconstruction.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
 
-        <div class="item item-bd1989-reconstruction">
-          <video style="width: 437px;" poster="" id="bd1989-reconstruction" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/bd1989_reconstruction.mp4"
-                    type="video/mp4">
-          </video>
+    <div class="hero-body">
+      <div class="container" id="container-carousel 2">
+        <h2 style="text-align: center;" class="title is-4">Reconstructed videos</h2>
+        <div id="results-carousel 2" class="carousel results-carousel">
+
+          <div class="item item-ignacio-reconstruction">
+            <video style="width: 437px;" poster="" id="ignacio-reconstruction" autoplay controls muted loop playsinline
+              height="100%">
+              <source
+                src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/ignacio_waving_reconstruction.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-nikita-reconstruction">
+            <video style="width: 437px;" poster="" id="nikita-reconstruction" autoplay controls muted loop playsinline
+              height="100%">
+              <source
+                src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/nikita_reading_reconstruction.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-teddy-reconstruction">
+            <video style="width: 437px;" poster="" id="teddy-reconstruction" autoplay controls muted loop playsinline
+              height="100%">
+              <source
+                src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/teddy_short_reconstruction.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+
+          <div class="item item-bd1989-reconstruction">
+            <video style="width: 437px;" poster="" id="bd1989-reconstruction" autoplay controls muted loop playsinline
+              height="100%">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/bd1989_reconstruction.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fec654-reconstruction">
+            <video style="width: 437px;" poster="" id="fec654-reconstruction" autoplay controls muted loop playsinline
+              height="100%">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/fec654_reconstruction.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-cc2896-reconstruction">
+            <video style="width: 437px;" poster="" id="cc2896-reconstruction" autoplay controls muted loop playsinline
+              height="100%">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/cc2896_reconstruction.mp4"
+                type="video/mp4">
+            </video>
+          </div>
+
         </div>
-        <div class="item item-fec654-reconstruction">
-          <video style="width: 437px;" poster="" id="fec654-reconstruction" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/fec654_reconstruction.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-cc2896-reconstruction">
-          <video style="width: 437px;" poster="" id="cc2896-reconstruction" autoplay controls muted loop playsinline height="100%">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/carousel/compressed/cc2896_reconstruction.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        
       </div>
     </div>
-  </div>
 
-</section>
+  </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We consider the problem of reconstructing a dynamic scene observed from a stereo camera. Existing methods for
-            depth from stereo treat each stereo-pair of frames independently, which results in temporally inconsistent predicted
-            depth.
-          </p> 
-          <p>
-            Temporal consistency is especially important for immersive AR or VR scenarios, where flickering greatly diminishes the user experience. 
-            We propose DynamicStereo, a novel transformer-based architecture to estimate disparity for stereo videos.
-            The network learns to pool information from neighboring frames to improve the temporal consistency of its predictions. Our architecture is designed to
-            process stereo videos efficiently by factorising attention layers. 
-          </p>
-          <p>
-            We also introduce Dynamic Replica, a new benchmark
-            dataset containing synthetic videos of people and animals
-            in scanned environments, which provides complementary
-            training and evaluation data for dynamic stereo closer to
-            real applications than existing datasets. Training with this
-            dataset further improves the quality of predictions of our
-            proposed DynamicStereo as well as prior methods. Finally,
-            it acts as a benchmark for consistent stereo methods.
-          </p>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We consider the problem of reconstructing a dynamic scene observed from a stereo camera.
+              Most existing methods for depth from stereo treat different stereo frames independently, leading to
+              temporally inconsistent depth predictions.
+
+            </p>
+            <p>
+              Temporal consistency is especially important for immersive AR or VR scenarios, where flickering greatly
+              diminishes the user experience.
+              We propose DynamicStereo, a novel transformer-based architecture to estimate disparity for stereo videos.
+              The network learns to pool information from neighboring frames to improve the temporal consistency of its
+              predictions.
+              Our architecture is designed to process stereo videos efficiently through divided attention layers.
+
+            </p>
+            <p>
+              We also introduce Dynamic Replica, a new benchmark dataset containing synthetic videos of people and
+              animals in scanned environments, which provides complementary training and evaluation data for dynamic
+              stereo closer to real applications than existing datasets. Training with this dataset further improves the
+              quality of predictions of our proposed DynamicStereo as well as prior methods.
+              Finally, it acts as a benchmark for consistent stereo methods.
+            </p>
+          </div>
+          <!-- <img src="static/architecture.png"> -->
         </div>
-        <!-- <img src="static/architecture.png"> -->
+      </div>
+      <!--/ Abstract. -->
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <!-- <div class="content has-text-centered"> -->
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Dataset overview</h2>
+          <div class="publication-video">
+            <!-- <div class="content has-text-centered"> -->
+            <video id="Dataset" playsinline="" height="100%" controls="">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/DynamicReplica.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method overview</h2>
+          <div class="publication-video">
+
+            <video id="Method" playsinline="" height="100%" controls="">
+              <source src="https://www.robots.ox.ac.uk/~nikita/storage/DynamicStereo.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <!-- </div> -->
       </div>
     </div>
-    <!--/ Abstract. -->
-     <!-- Paper video. -->
-  <div class="columns is-centered has-text-centered">
-  <!-- <div class="content has-text-centered"> -->
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Dataset overview</h2>
-      <div class="publication-video">
-      <!-- <div class="content has-text-centered"> -->
-          <video id="Dataset" playsinline="" height="100%" controls="">
-            <source src="https://www.robots.ox.ac.uk/~nikita/storage/DynamicReplica.mp4" type="video/mp4">
-          </video>
-      </div>
-    </div>
-  </div>
-    <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Method overview</h2>
-      <div class="publication-video">
-            
-              <video id="Method" playsinline="" height="100%" controls="">
-                <source src="https://www.robots.ox.ac.uk/~nikita/storage/DynamicStereo.mp4" type="video/mp4">
-              </video>
-            </div>
-      </div>
+    <!--/ Paper video. -->
     <!-- </div> -->
-  </div>
-</div>
-  <!--/ Paper video. -->
-  <!-- </div> -->
     <!-- Paper video. -->
     <!-- <div class="columns is-centered has-text-centered"> -->
-      <!-- <div class="column is-four-fifths"> -->
-        
-          
-        <!-- </div>
+    <!-- <div class="column is-four-fifths"> -->
+
+
+    <!-- </div>
       </div>
     </div> -->
     <!--/ Paper video. -->
-  </div>
+    </div>
 
- 
-</section>
 
-<!-- <section class="section">
+  </section>
+
+  <!-- <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -425,27 +434,29 @@
 </section> -->
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code></code></pre>
-  </div>
-</section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code></code></pre>
+    </div>
+  </section>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This webpage template is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>.
-          </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This webpage template is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
+              under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
